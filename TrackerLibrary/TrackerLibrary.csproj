@@ -38,7 +38,7 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="MatchEntryModel.cs" />
+        <Compile Include="MatchupEntryModel.cs" />
         <Compile Include="MatchupModel.cs" />
         <Compile Include="PersonModel.cs" />
         <Compile Include="PrizeModel.cs" />

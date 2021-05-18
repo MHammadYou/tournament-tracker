@@ -4,7 +4,7 @@ namespace TrackerLibrary
 {
     public class MatchupModel
     {
-        public List<MathupEntryModel> Entries { get; set; }
+        public List<MatchEntryModel> Entries { get; set; } = new List<MatchEntryModel>();
         public TeamModel Winner { get; set; }
         public int MatchupRound { get; set; }   
     }

@@ -29,19 +29,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.TournamentLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.roundLabel = new System.Windows.Forms.Label();
+            this.roundDropDown = new System.Windows.Forms.ComboBox();
+            this.unplayedOnlyCheckbox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
-            // label1
+            // TournamentLabel
             // 
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int) (((byte) (51)))), ((int) (((byte) (153)))), ((int) (((byte) (255)))));
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 60);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Tournament: ";
+            this.TournamentLabel.ForeColor = System.Drawing.Color.FromArgb(((int) (((byte) (51)))), ((int) (((byte) (153)))), ((int) (((byte) (255)))));
+            this.TournamentLabel.Location = new System.Drawing.Point(12, 9);
+            this.TournamentLabel.Name = "TournamentLabel";
+            this.TournamentLabel.Size = new System.Drawing.Size(126, 30);
+            this.TournamentLabel.TabIndex = 0;
+            this.TournamentLabel.Text = "Tournament: ";
             // 
             // label2
             // 
@@ -53,14 +55,34 @@
             this.label2.Text = "<None>";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label3
+            // roundLabel
             // 
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int) (((byte) (51)))), ((int) (((byte) (152)))), ((int) (((byte) (255)))));
-            this.label3.Location = new System.Drawing.Point(12, 50);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 37);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Round";
+            this.roundLabel.ForeColor = System.Drawing.Color.FromArgb(((int) (((byte) (51)))), ((int) (((byte) (152)))), ((int) (((byte) (255)))));
+            this.roundLabel.Location = new System.Drawing.Point(12, 50);
+            this.roundLabel.Name = "roundLabel";
+            this.roundLabel.Size = new System.Drawing.Size(80, 37);
+            this.roundLabel.TabIndex = 2;
+            this.roundLabel.Text = "Round";
+            // 
+            // roundDropDown
+            // 
+            this.roundDropDown.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.roundDropDown.FormattingEnabled = true;
+            this.roundDropDown.Location = new System.Drawing.Point(88, 57);
+            this.roundDropDown.Name = "roundDropDown";
+            this.roundDropDown.Size = new System.Drawing.Size(115, 25);
+            this.roundDropDown.TabIndex = 3;
+            // 
+            // unplayedOnlyCheckbox
+            // 
+            this.unplayedOnlyCheckbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.unplayedOnlyCheckbox.ForeColor = System.Drawing.Color.FromArgb(((int) (((byte) (51)))), ((int) (((byte) (153)))), ((int) (((byte) (255)))));
+            this.unplayedOnlyCheckbox.Location = new System.Drawing.Point(88, 88);
+            this.unplayedOnlyCheckbox.Name = "unplayedOnlyCheckbox";
+            this.unplayedOnlyCheckbox.Size = new System.Drawing.Size(165, 35);
+            this.unplayedOnlyCheckbox.TabIndex = 4;
+            this.unplayedOnlyCheckbox.Text = "Unplayed Only";
+            this.unplayedOnlyCheckbox.UseVisualStyleBackColor = true;
             // 
             // TournamentViewForm
             // 
@@ -68,9 +90,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(402, 302);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.unplayedOnlyCheckbox);
+            this.Controls.Add(this.roundDropDown);
+            this.Controls.Add(this.roundLabel);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.TournamentLabel);
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.Name = "TournamentViewForm";
@@ -78,11 +103,13 @@
             this.ResumeLayout(false);
         }
 
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox roundDropDown;
+        private System.Windows.Forms.Label roundLabel;
+        private System.Windows.Forms.Label TournamentLabel;
+
+        private System.Windows.Forms.CheckBox unplayedOnlyCheckbox;
 
         private System.Windows.Forms.Label label2;
-
-        private System.Windows.Forms.Label label1;
 
         #endregion
     }

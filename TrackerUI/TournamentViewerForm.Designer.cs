@@ -62,7 +62,6 @@
             this.label2.Size = new System.Drawing.Size(96, 45);
             this.label2.TabIndex = 1;
             this.label2.Text = "<None>";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // roundLabel
             // 
@@ -169,12 +168,13 @@
             this.scoreButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int) (((byte) (102)))), ((int) (((byte) (102)))), ((int) (((byte) (102)))));
             this.scoreButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int) (((byte) (242)))), ((int) (((byte) (242)))), ((int) (((byte) (242)))));
             this.scoreButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.scoreButton.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.scoreButton.ForeColor = System.Drawing.Color.FromArgb(((int) (((byte) (51)))), ((int) (((byte) (153)))), ((int) (((byte) (255)))));
-            this.scoreButton.Location = new System.Drawing.Point(429, 229);
+            this.scoreButton.Location = new System.Drawing.Point(444, 215);
             this.scoreButton.Name = "scoreButton";
-            this.scoreButton.Size = new System.Drawing.Size(73, 38);
+            this.scoreButton.Size = new System.Drawing.Size(85, 43);
             this.scoreButton.TabIndex = 13;
-            this.scoreButton.Text = "button1";
+            this.scoreButton.Text = "Score";
             this.scoreButton.UseVisualStyleBackColor = true;
             // 
             // TournamentViewForm
@@ -182,7 +182,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(533, 394);
+            this.ClientSize = new System.Drawing.Size(577, 394);
             this.Controls.Add(this.scoreButton);
             this.Controls.Add(this.vsLabel);
             this.Controls.Add(this.teamTwoScore);

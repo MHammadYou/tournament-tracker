@@ -9,10 +9,5 @@ namespace TrackerUI
         {
             InitializeComponent();
         }
-
-        private void teamOneScore_TextChanged(object sender, EventArgs e)
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }

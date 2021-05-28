@@ -73,13 +73,12 @@ namespace TrackerUI
             this.EntryFeeValue.Size = new System.Drawing.Size(85, 29);
             this.EntryFeeValue.TabIndex = 12;
             this.EntryFeeValue.Text = "0";
-            this.EntryFeeValue.TextChanged += new System.EventHandler(this.teamOneScore_TextChanged);
             // 
             // EntryFeeLabel
             // 
             this.EntryFeeLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.EntryFeeLabel.ForeColor = System.Drawing.Color.FromArgb(((int) (((byte) (51)))), ((int) (((byte) (152)))), ((int) (((byte) (255)))));
-            this.EntryFeeLabel.Location = new System.Drawing.Point(22, 166);
+            this.EntryFeeLabel.Location = new System.Drawing.Point(24, 166);
             this.EntryFeeLabel.Name = "EntryFeeLabel";
             this.EntryFeeLabel.Size = new System.Drawing.Size(100, 29);
             this.EntryFeeLabel.TabIndex = 11;

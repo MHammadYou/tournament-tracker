@@ -36,6 +36,8 @@ namespace TrackerUI
             this.tournamentNameLabel = new System.Windows.Forms.Label();
             this.EntryFeeValue = new System.Windows.Forms.TextBox();
             this.EntryFeeLabel = new System.Windows.Forms.Label();
+            this.selectTeamDropdown = new System.Windows.Forms.ComboBox();
+            this.selectTeamLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // TournamentLabel
@@ -84,12 +86,33 @@ namespace TrackerUI
             this.EntryFeeLabel.TabIndex = 11;
             this.EntryFeeLabel.Text = "Entry Fee";
             // 
+            // selectTeamDropdown
+            // 
+            this.selectTeamDropdown.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.selectTeamDropdown.FormattingEnabled = true;
+            this.selectTeamDropdown.Location = new System.Drawing.Point(30, 254);
+            this.selectTeamDropdown.Name = "selectTeamDropdown";
+            this.selectTeamDropdown.Size = new System.Drawing.Size(247, 25);
+            this.selectTeamDropdown.TabIndex = 13;
+            // 
+            // selectTeamLabel
+            // 
+            this.selectTeamLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.selectTeamLabel.ForeColor = System.Drawing.Color.FromArgb(((int) (((byte) (51)))), ((int) (((byte) (152)))), ((int) (((byte) (255)))));
+            this.selectTeamLabel.Location = new System.Drawing.Point(24, 222);
+            this.selectTeamLabel.Name = "selectTeamLabel";
+            this.selectTeamLabel.Size = new System.Drawing.Size(114, 29);
+            this.selectTeamLabel.TabIndex = 14;
+            this.selectTeamLabel.Text = "Select Team";
+            // 
             // CreateTournamentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(624, 418);
+            this.Controls.Add(this.selectTeamLabel);
+            this.Controls.Add(this.selectTeamDropdown);
             this.Controls.Add(this.EntryFeeValue);
             this.Controls.Add(this.EntryFeeLabel);
             this.Controls.Add(this.tournamentNameValue);
@@ -102,6 +125,9 @@ namespace TrackerUI
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private System.Windows.Forms.ComboBox selectTeamDropdown;
+        private System.Windows.Forms.Label selectTeamLabel;
 
         private System.Windows.Forms.TextBox EntryFeeValue;
 

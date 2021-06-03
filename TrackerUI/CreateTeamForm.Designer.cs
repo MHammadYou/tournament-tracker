@@ -34,6 +34,9 @@ namespace TrackerUI
             this.tournamentNameValue = new System.Windows.Forms.TextBox();
             this.teamNameLabel = new System.Windows.Forms.Label();
             this.TeamLabel = new System.Windows.Forms.Label();
+            this.addMemberButton = new System.Windows.Forms.Button();
+            this.selectTeamMemberLabel = new System.Windows.Forms.Label();
+            this.selectTeamMemberDropdown = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // tournamentNameValue
@@ -63,12 +66,49 @@ namespace TrackerUI
             this.TeamLabel.TabIndex = 11;
             this.TeamLabel.Text = "Create Team";
             // 
+            // addMemberButton
+            // 
+            this.addMemberButton.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.addMemberButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int) (((byte) (102)))), ((int) (((byte) (102)))), ((int) (((byte) (102)))));
+            this.addMemberButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int) (((byte) (242)))), ((int) (((byte) (242)))), ((int) (((byte) (242)))));
+            this.addMemberButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addMemberButton.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.addMemberButton.ForeColor = System.Drawing.Color.FromArgb(((int) (((byte) (51)))), ((int) (((byte) (153)))), ((int) (((byte) (255)))));
+            this.addMemberButton.Location = new System.Drawing.Point(32, 237);
+            this.addMemberButton.Name = "addMemberButton";
+            this.addMemberButton.Size = new System.Drawing.Size(137, 35);
+            this.addMemberButton.TabIndex = 19;
+            this.addMemberButton.Text = "Add Member";
+            this.addMemberButton.UseVisualStyleBackColor = true;
+            // 
+            // selectTeamMemberLabel
+            // 
+            this.selectTeamMemberLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.selectTeamMemberLabel.ForeColor = System.Drawing.Color.FromArgb(((int) (((byte) (51)))), ((int) (((byte) (152)))), ((int) (((byte) (255)))));
+            this.selectTeamMemberLabel.Location = new System.Drawing.Point(26, 158);
+            this.selectTeamMemberLabel.Name = "selectTeamMemberLabel";
+            this.selectTeamMemberLabel.Size = new System.Drawing.Size(114, 29);
+            this.selectTeamMemberLabel.TabIndex = 18;
+            this.selectTeamMemberLabel.Text = "Select Member";
+            // 
+            // selectTeamMemberDropdown
+            // 
+            this.selectTeamMemberDropdown.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.selectTeamMemberDropdown.FormattingEnabled = true;
+            this.selectTeamMemberDropdown.Location = new System.Drawing.Point(32, 190);
+            this.selectTeamMemberDropdown.Name = "selectTeamMemberDropdown";
+            this.selectTeamMemberDropdown.Size = new System.Drawing.Size(247, 25);
+            this.selectTeamMemberDropdown.TabIndex = 17;
+            // 
             // CreateTeamForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(784, 539);
+            this.Controls.Add(this.addMemberButton);
+            this.Controls.Add(this.selectTeamMemberLabel);
+            this.Controls.Add(this.selectTeamMemberDropdown);
             this.Controls.Add(this.tournamentNameValue);
             this.Controls.Add(this.teamNameLabel);
             this.Controls.Add(this.TeamLabel);
@@ -79,6 +119,10 @@ namespace TrackerUI
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private System.Windows.Forms.Button addMemberButton;
+        private System.Windows.Forms.ComboBox selectTeamMemberDropdown;
+        private System.Windows.Forms.Label selectTeamMemberLabel;
 
         private System.Windows.Forms.Label TeamLabel;
         private System.Windows.Forms.Label teamNameLabel;

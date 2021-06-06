@@ -52,10 +52,11 @@ namespace TrackerUI
             // 
             // TournamentLabel
             // 
+            this.TournamentLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.TournamentLabel.ForeColor = System.Drawing.Color.FromArgb(((int) (((byte) (51)))), ((int) (((byte) (153)))), ((int) (((byte) (255)))));
             this.TournamentLabel.Location = new System.Drawing.Point(22, 24);
             this.TournamentLabel.Name = "TournamentLabel";
-            this.TournamentLabel.Size = new System.Drawing.Size(191, 30);
+            this.TournamentLabel.Size = new System.Drawing.Size(255, 41);
             this.TournamentLabel.TabIndex = 1;
             this.TournamentLabel.Text = "Create Tournament";
             // 

@@ -47,17 +47,18 @@
             // 
             // TournamentLabel
             // 
+            this.TournamentLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.TournamentLabel.ForeColor = System.Drawing.Color.FromArgb(((int) (((byte) (51)))), ((int) (((byte) (153)))), ((int) (((byte) (255)))));
             this.TournamentLabel.Location = new System.Drawing.Point(12, 9);
             this.TournamentLabel.Name = "TournamentLabel";
-            this.TournamentLabel.Size = new System.Drawing.Size(126, 30);
+            this.TournamentLabel.Size = new System.Drawing.Size(157, 30);
             this.TournamentLabel.TabIndex = 0;
             this.TournamentLabel.Text = "Tournament: ";
             // 
             // label2
             // 
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int) (((byte) (51)))), ((int) (((byte) (153)))), ((int) (((byte) (255)))));
-            this.label2.Location = new System.Drawing.Point(157, 9);
+            this.label2.Location = new System.Drawing.Point(175, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 45);
             this.label2.TabIndex = 1;

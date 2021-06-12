@@ -2,6 +2,6 @@
 {
     public interface IDataConnection
     {
-        
+        PrizeModel CreatePrize(PrizeModel model);
     }
 }

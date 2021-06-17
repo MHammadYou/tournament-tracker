@@ -4,7 +4,8 @@
     {
         public PrizeModel CreatePrize(PrizeModel model)
         {
-            throw new System.NotImplementedException();
+            model.Id = 1;
+            return model;
         }
     }
 }

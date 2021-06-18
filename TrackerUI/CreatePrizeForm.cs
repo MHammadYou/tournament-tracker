@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 
 namespace TrackerUI
 {
@@ -7,6 +8,11 @@ namespace TrackerUI
         public CreatePrizeForm()
         {
             InitializeComponent();
+        }
+
+        private void createPrizeButton_Click(object sender, EventArgs e)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

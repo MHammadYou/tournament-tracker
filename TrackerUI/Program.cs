@@ -19,7 +19,6 @@ namespace TrackerUI
             Application.SetCompatibleTextRenderingDefault(false);
 
             GlobalConfig.InitializeConnection();
-            
             Application.Run(new CreatePrizeForm());
         }
     }

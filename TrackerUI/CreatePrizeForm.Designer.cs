@@ -36,9 +36,9 @@ namespace TrackerUI
             this.placeNumberLabel = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.placeNameLabel = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.prizeAmountValue = new System.Windows.Forms.TextBox();
             this.priceAmountLabel = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.prizePercentageValue = new System.Windows.Forms.TextBox();
             this.prizePercentageLabel = new System.Windows.Forms.Label();
             this.orLabel = new System.Windows.Forms.Label();
             this.createPrizeButton = new System.Windows.Forms.Button();
@@ -88,13 +88,13 @@ namespace TrackerUI
             this.placeNameLabel.TabIndex = 15;
             this.placeNameLabel.Text = "Place Name";
             // 
-            // textBox2
+            // prizeAmountValue
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.textBox2.Location = new System.Drawing.Point(203, 190);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(148, 29);
-            this.textBox2.TabIndex = 18;
+            this.prizeAmountValue.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.prizeAmountValue.Location = new System.Drawing.Point(203, 190);
+            this.prizeAmountValue.Name = "prizeAmountValue";
+            this.prizeAmountValue.Size = new System.Drawing.Size(148, 29);
+            this.prizeAmountValue.TabIndex = 18;
             // 
             // priceAmountLabel
             // 
@@ -105,13 +105,13 @@ namespace TrackerUI
             this.priceAmountLabel.TabIndex = 17;
             this.priceAmountLabel.Text = "Prize Amount";
             // 
-            // textBox3
+            // prizePercentageValue
             // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.textBox3.Location = new System.Drawing.Point(203, 271);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(148, 29);
-            this.textBox3.TabIndex = 20;
+            this.prizePercentageValue.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.prizePercentageValue.Location = new System.Drawing.Point(203, 271);
+            this.prizePercentageValue.Name = "prizePercentageValue";
+            this.prizePercentageValue.Size = new System.Drawing.Size(148, 29);
+            this.prizePercentageValue.TabIndex = 20;
             // 
             // prizePercentageLabel
             // 
@@ -155,9 +155,9 @@ namespace TrackerUI
             this.ClientSize = new System.Drawing.Size(786, 542);
             this.Controls.Add(this.createPrizeButton);
             this.Controls.Add(this.orLabel);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.prizePercentageValue);
             this.Controls.Add(this.prizePercentageLabel);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.prizeAmountValue);
             this.Controls.Add(this.priceAmountLabel);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.placeNameLabel);
@@ -172,6 +172,10 @@ namespace TrackerUI
             this.PerformLayout();
         }
 
+        private System.Windows.Forms.TextBox prizePercentageValue;
+
+        private System.Windows.Forms.TextBox prizeAmountValue;
+
         private System.Windows.Forms.Button createPrizeButton;
 
         private System.Windows.Forms.Label orLabel;
@@ -180,8 +184,6 @@ namespace TrackerUI
         private System.Windows.Forms.Label priceAmountLabel;
         private System.Windows.Forms.Label prizePercentageLabel;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
 
         private System.Windows.Forms.Label placeNumberLabel;
 

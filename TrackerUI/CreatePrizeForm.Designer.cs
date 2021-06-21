@@ -34,7 +34,7 @@ namespace TrackerUI
             this.CreatePrizeLabel = new System.Windows.Forms.Label();
             this.placeNumberValue = new System.Windows.Forms.TextBox();
             this.placeNumberLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.placeNameValue = new System.Windows.Forms.TextBox();
             this.placeNameLabel = new System.Windows.Forms.Label();
             this.prizeAmountValue = new System.Windows.Forms.TextBox();
             this.priceAmountLabel = new System.Windows.Forms.Label();
@@ -71,13 +71,13 @@ namespace TrackerUI
             this.placeNumberLabel.TabIndex = 13;
             this.placeNumberLabel.Text = "Place Number";
             // 
-            // textBox1
+            // placeNameValue
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.textBox1.Location = new System.Drawing.Point(203, 141);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(148, 29);
-            this.textBox1.TabIndex = 16;
+            this.placeNameValue.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.placeNameValue.Location = new System.Drawing.Point(203, 141);
+            this.placeNameValue.Name = "placeNameValue";
+            this.placeNameValue.Size = new System.Drawing.Size(148, 29);
+            this.placeNameValue.TabIndex = 16;
             // 
             // placeNameLabel
             // 
@@ -159,7 +159,7 @@ namespace TrackerUI
             this.Controls.Add(this.prizePercentageLabel);
             this.Controls.Add(this.prizeAmountValue);
             this.Controls.Add(this.priceAmountLabel);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.placeNameValue);
             this.Controls.Add(this.placeNameLabel);
             this.Controls.Add(this.placeNumberValue);
             this.Controls.Add(this.placeNumberLabel);
@@ -172,6 +172,8 @@ namespace TrackerUI
             this.PerformLayout();
         }
 
+        private System.Windows.Forms.TextBox placeNameValue;
+
         private System.Windows.Forms.TextBox prizePercentageValue;
 
         private System.Windows.Forms.TextBox prizeAmountValue;
@@ -183,7 +185,6 @@ namespace TrackerUI
         private System.Windows.Forms.TextBox placeNumberValue;
         private System.Windows.Forms.Label priceAmountLabel;
         private System.Windows.Forms.Label prizePercentageLabel;
-        private System.Windows.Forms.TextBox textBox1;
 
         private System.Windows.Forms.Label placeNumberLabel;
 

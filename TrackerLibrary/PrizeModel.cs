@@ -15,7 +15,15 @@
 
         public PrizeModel(string placeName, string placeNumber, string prizeAmount, string prizePercentage)
         {
+            PlaceName = placeName;
             
+            int placeNumberValue = 0;
+            int.TryParse(placeNumber, out placeNumberValue);
+            PlaceNumber = placeNumberValue;
+
+            decimal placeAmountValue = 0;
+
+
         }
         
     }

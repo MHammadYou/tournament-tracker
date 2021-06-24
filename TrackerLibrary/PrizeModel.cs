@@ -5,7 +5,7 @@
         public int Id { get; set; }
         public int PlaceNumber { get; set; }
         public string PlaceName { get; set; }
-        public decimal PriceAmount { get; set; }
+        public decimal PrizeAmount { get; set; }
         public double PrizePercentage { get; set; }
 
         public PrizeModel()
@@ -21,7 +21,13 @@
             int.TryParse(placeNumber, out placeNumberValue);
             PlaceNumber = placeNumberValue;
 
-            decimal placeAmountValue = 0;
+            decimal prizeAmountValue = 0;
+            decimal.TryParse(prizeAmount, out prizeAmountValue);
+            PrizeAmount = prizeAmountValue;
+
+            double prizePercentageValue = 0;
+            double.TryParse(prizePercentage, out prizePercentageValue);
+            PrizePercentage = prizePercentageValue;
 
 
         }

@@ -26,6 +26,11 @@ namespace TrackerUI
                 {
                     db.CreatePrize(model);
                 }
+
+                    placeNameValue.Text = "";
+                    placeNumberValue.Text = "";
+                    prizeAmountValue.Text = "0";
+                    prizePercentageValue.Text = "0";
             }
             else
             {
